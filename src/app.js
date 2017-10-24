@@ -12,6 +12,7 @@ import 'react-dates/lib/css/_datepicker.css';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import { firebase } from './firebase/firebase';
+import LoadingPage from './components/loading-page';
 
 const store = configureStore();
 
@@ -30,7 +31,7 @@ const renderApp = () => {
 };
 
 ReactDOM.render(
-    <p>Loading...</p>,
+    <LoadingPage />,
     document.getElementById('app')
 );
 

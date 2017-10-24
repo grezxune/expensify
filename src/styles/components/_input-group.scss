@@ -1,0 +1,20 @@
+.input-group {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    // justify-content: center;
+    margin-bottom: $m-size;
+
+    @media (min-width: $desktop-breakpoint) {
+        flex-flow: row nowrap;
+        margin-bottom: $l-size;
+    }
+}
+
+.input-group__item {
+    margin: 0 0 $s-size 0;
+
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0 $s-size 0 0;
+    }
+}
